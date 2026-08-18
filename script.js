@@ -41,6 +41,14 @@ if (btn) {
     }
   });
 }
-<audio id="bgMusic" loop autoplay>
-  <source src="assets/music.mp3" type="audio/mpeg">
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    music.play().catch(() => {});
+}, { once: true });
+</script>
