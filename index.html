@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070d" />
+  <meta name="description" content="Vikash Kumawat — Computer Science & Cybersecurity Portfolio" />
+  <title>Vikash Kumawat | Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-core"></div>
+    <div class="loader-text">INITIALIZING PORTFOLIO<span>_</span></div>
+  </div>
+
+  <canvas id="network"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="scanlines"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span>VK</span><b>PORTFOLIO</b></a>
+    <button class="menu" aria-label="Open menu"><i></i><i></i><i></i></button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle background music">♫ <span>Music OFF</span></button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <div class="status"><span></span> AVAILABLE TO LEARN & BUILD</div>
+        <p class="eyebrow">COMPUTER SCIENCE × CYBERSECURITY</p>
+        <h1>VIKASH<br><em>KUMAWAT</em><span class="cursor">_</span></h1>
+        <p class="hero-copy">Building a strong foundation in <strong>Linux, networking, cybersecurity and ethical hacking</strong> — one lab, one system and one challenge at a time.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore My Work <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-photo reveal">
+        <div class="photo-ring"></div>
+        <img src="profile.jpg" alt="Vikash Kumawat profile photo">
+        <div class="photo-tag">VIKASH KUMAWAT</div>
+      </div>
+      <div class="terminal reveal">
+        <div class="terminal-head"><span></span><span></span><span></span><b>vikash@portfolio:~</b></div>
+        <div class="terminal-body">
+          <p><i>vikash@portfolio</i>:~$ whoami</p>
+          <p class="out">computer_science_student</p>
+          <p><i>vikash@portfolio</i>:~$ focus --current</p>
+          <p class="out">cybersecurity | networking | linux</p>
+          <p><i>vikash@portfolio</i>:~$ skills --load</p>
+          <p class="out">[████████████████████] 100%</p>
+          <p><i>vikash@portfolio</i>:~$ <span class="blink">_</span></p>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="section-content">
+        <p class="eyebrow">WHO I AM</p>
+        <h2>Curious mind.<br><em>Security mindset.</em></h2>
+        <p class="large">I'm <strong>Vikash Kumawat</strong>, a computer science student focused on building practical skills in cybersecurity and technology.</p>
+        <p>My interests include Linux systems, computer networks, CCNA concepts, ethical hacking and hardware. I enjoy understanding how systems work, finding weaknesses in controlled environments, and learning how to make technology more secure.</p>
+        <div class="about-stats">
+          <div><b>01</b><span>Cybersecurity<br>Focus</span></div>
+          <div><b>02</b><span>Networking<br>Mindset</span></div>
+          <div><b>03</b><span>Hands-on<br>Learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label">02 / SKILLS</div>
+      <div class="section-content wide">
+        <p class="eyebrow">TECH STACK</p>
+        <h2>Tools I’m <em>learning.</em></h2>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">⌁</div><h3>Linux</h3><p>Command line, system basics, administration and security-oriented workflows.</p><div class="meter"><span style="width:82%"></span></div><small>FOCUS 82%</small></article>
+          <article class="skill-card"><div class="skill-icon">◈</div><h3>Networking</h3><p>TCP/IP, addressing, routing, switching and network troubleshooting.</p><div class="meter"><span style="width:78%"></span></div><small>FOCUS 78%</small></article>
+          <article class="skill-card"><div class="skill-icon">⛨</div><h3>Cybersecurity</h3><p>Security fundamentals, threat awareness and practical lab-based learning.</p><div class="meter"><span style="width:72%"></span></div><small>FOCUS 72%</small></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>CCNA</h3><p>Building networking knowledge around Cisco concepts and certification topics.</p><div class="meter"><span style="width:68%"></span></div><small>FOCUS 68%</small></article>
+          <article class="skill-card"><div class="skill-icon">⚙</div><h3>Hardware</h3><p>PC components, troubleshooting, setup and understanding computer systems.</p><div class="meter"><span style="width:75%"></span></div><small>FOCUS 75%</small></article>
+          <article class="skill-card"><div class="skill-icon">⌬</div><h3>Ethical Hacking</h3><p>Learning responsible security testing through legal, controlled environments.</p><div class="meter"><span style="width:65%"></span></div><small>FOCUS 65%</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-label">03 / PROJECTS</div>
+      <div class="section-content wide">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Labs. Experiments.<br><em>Real learning.</em></h2>
+        <div class="projects-grid">
+          <article class="project featured"><div class="project-no">01</div><div class="project-body"><span>CYBERSECURITY LAB</span><h3>Security Lab</h3><p>A controlled environment for practicing Linux, security fundamentals and ethical-hacking concepts.</p><div class="tags"><b>Linux</b><b>Security</b><b>Labs</b></div></div><div class="project-arrow">↗</div></article>
+          <article class="project"><div class="project-no">02</div><div class="project-body"><span>NETWORKING</span><h3>Network Lab</h3><p>Hands-on practice with IP addressing, routing, switching and troubleshooting concepts.</p><div class="tags"><b>CCNA</b><b>TCP/IP</b><b>Routing</b></div></div><div class="project-arrow">↗</div></article>
+          <article class="project"><div class="project-no">03</div><div class="project-body"><span>SYSTEMS</span><h3>Linux Playground</h3><p>Command-line experiments, system configuration and automation-focused learning.</p><div class="tags"><b>Linux</b><b>CLI</b><b>Systems</b></div></div><div class="project-arrow">↗</div></article>
+        </div>
+        <p class="coming">More projects will appear here as I build and publish them.</p>
+      </div>
+    </section>
+
+    <section id="education" class="section split">
+      <div class="section-label">04 / EDUCATION</div>
+      <div class="section-content">
+        <p class="eyebrow">MY JOURNEY</p>
+        <h2>Learning the<br><em>fundamentals.</em></h2>
+        <div class="timeline">
+          <div class="timeline-item"><span>COMPLETED</span><div><h3>Class 12</h3><p>Bombay Public School</p><small>School Education</small></div></div>
+          <div class="timeline-item current"><span>SEP 2026 →</span><div><h3>Computer Science</h3><p>Acropolis Institute of Technology and Research</p><small>Computer Science pathway</small></div></div>
+          <div class="timeline-item"><span>ONGOING</span><div><h3>Cybersecurity Diploma</h3><p>Cybersecurity specialization</p><small>Practical security learning</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-label">05 / CONTACT</div>
+      <div class="contact-content">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a project?<br><em>Let’s build.</em></h2>
+        <p>I'm open to learning opportunities, cybersecurity projects, networking labs and meaningful collaborations.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:vikashkumawat8871@gmail.com.com">Email Me ↗</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/vkorg?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a class="btn ghost" href="https://github.com/v7coder" target="_blank" rel="noreferrer">GitHub ↗</a>
+        </div>
+        <div class="contact-line"></div>
+        <p class="mono">vikash@portfolio:~$ echo "keep_learning"</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 VIKASH KUMAWAT</span><span>BUILT WITH CURIOSITY + CODE</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
