@@ -41,14 +41,25 @@ if (btn) {
     }
   });
 }
-<audio id="bgMusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+const audio = document.getElementById("bgMusic");
 
-<script>
-const music = document.getElementById("bgMusic");
+audio.volume = 0.45;
 
-document.addEventListener("click", () => {
-    music.play().catch(() => {});
-}, { once: true });
-</script>
+window.addEventListener("load", () => {
+    audio.play().catch(() => {
+        // Browser blocked autoplay.
+        // Start music on the visitor's first interaction.
+        const startMusic = () => {
+            audio.play().catch(() => {});
+            document.removeEventListener("click", startMusic);
+            document.removeEventListener("keydown", startMusic);
+            document.removeEventListener("touchstart", startMusic);
+            document.removeEventListener("scroll", startMusic);
+        };
+
+        document.addEventListener("click", startMusic);
+        document.addEventListener("keydown", startMusic);
+        document.addEventListener("touchstart", startMusic);
+        document.addEventListener("scroll", startMusic);
+    });
+});
