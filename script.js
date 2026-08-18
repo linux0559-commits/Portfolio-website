@@ -41,3 +41,6 @@ if (btn) {
     }
   });
 }
+<audio id="bgMusic" loop autoplay>
+  <source src="assets/music.mp3" type="audio/mpeg">
+</audio>
