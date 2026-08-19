@@ -20,7 +20,7 @@ addEventListener("resize",resize);resize();draw();
 // Background music
 const music = new Audio("./music.mp3");
 music.loop = true;
-music.volume = 0.03;
+music.volume = 0.02;
 let musicOn = false;
 const btn = document.getElementById("musicBtn");
 if (btn) {
