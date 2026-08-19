@@ -21,7 +21,7 @@ addEventListener("resize",resize);resize();draw();
 const music = new Audio("./music.mp3");
 music.loop = true;
 music.volume = 0.1;
-let musicOn = false;
+let musicOn = true;
 const btn = document.getElementById("musicBtn");
 if (btn) {
   btn.addEventListener("click", async () => {
